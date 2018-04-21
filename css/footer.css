@@ -1,0 +1,38 @@
+
+#footer-main {
+    height:100%;
+    bottom: 0%;
+}
+
+#footer {
+    
+    display: block;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 0rem;
+    background-color: black;
+    height:70px;
+    
+}
+
+#footer ul i:nth-child(1):hover {
+    text-shadow: 5px 5px 10px #3b5998;
+    cursor: pointer;
+
+}
+#footer ul i:nth-child(2):hover {
+    text-shadow: 5px 5px 10px #c32aa3;
+    cursor: pointer;
+
+}
+#footer ul i:nth-child(3):hover {
+    text-shadow: 5px 5px 10px #1da1f2;
+    cursor: pointer;
+
+}
+#footer ul i:nth-child(4):hover {
+    text-shadow: 5px 5px 10px #ff0000;
+    cursor: pointer;
+
+}

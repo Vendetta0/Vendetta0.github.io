@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="imgfavicon-32x32.png" sizes="32x32" style="left: 0px;" />
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <!--Header-->
+    <nav>
+        <img src="img/maxmusclewhight.png" style="float: left;" width="240" height="170">
+
+        <ul>
+
+            <li>
+                <a id="active" href ="index.html">Home</a> 
+            </li>
+            <li>
+                    <a style="color: #efefef" href = "aboutUS.html">About Us</a>
+                
+            </li>
+            <li> 
+                <a style="color: #efefef" href = "contactUS.html">Contact Us</a>
+            </li>
+            <li> 
+                <a style="color: #efefef" href = "Location.html">Stores</a>
+            </li>
+            <li>
+                    <!--DropDown list for supplements-->
+                    <div class="dropdown">
+                            <a style="color: #efefef" href = "Supp.html">Supplements</a>
+                            <div class="dropdown-content">
+                                <a href="Supp/Gainer.html">Gainer</a>
+                                <a href="Supp/Burner.html">Burners</a>
+                                <a href="Supp/Protein.html">Protein</a>
+                                <a href="Supp/Multiviramins.html">Multivitamins</a>
+                                <a href="Supp/Pre_Workout.html">Pre-Workout</a>   
+                            </div>
+                        </div> 
+            </li>
+            
+
+        </ul>
+    </nav>
+    <!--EndOfHeader-->
+
+    <!--SlideShow-->
+    <div class="slideshow-container"style="padding-top:100px;">
+
+        <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/img1.jpg" height="400" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <video style="width:100%" height="400" controls="controls">
+            <source src="SgvCMxYPOFs.mp4" type="video/mp4">
+            
+        </video>
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/img3.jpg" height="400" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <!--EndOfSlideShow-->
+    <!--EndOfSlideShow-->
+    <!--background-->
+<div class="background-wrap" style="background-size: cover">
+    <video id="Motivation" preload="auto" autoplay="true" loop="loop" muted="muted"> 
+    <source src="Motivation.mp4" type="video/mp4">
+    </video>          
+</div>
+	<!--End of background-->	
+<div class="Supp">         
+        <h1 style="bottom: 150px"><strong>Supplements</strong></h1>
+    <div class="Supp" style="bottom: 150px">
+        <a href="Gainers.html"> <img title="Gainers" src="img/Gainer.jpg" style="width:250px;height:250px" class="zoom"></a>
+        <a href="Burners.html" > <img title="Burners" src="img/Burner.png" style="width:250px;height:250px" class="zoom"></a>
+        <a href="Protiens.html"> <img title="Protiens" src="img/Protien.png" style="width:250px;height:250px" class="zoom"></a>
+        <a href="Multivitamins.html"> <img title="Multivitamins" src="img/Multivitamin.png" style="width:250px;height:300px;" class="zoom"></a>
+        <a href="Pre Workout.html"> <img title="Pre Workout" src="img/PreWorkout.png" style="width:250px;height:350px" class="zoom"></a>
+    </div>            
+</div>	
+    <!--Footer-->
+<div id="footer">
+    <div class="text-center" style="padding-top: 20px;">
+        <ul class="list-unstyled list-inline" style=" text-transform: uppercase; letter-spacing: 15px;">
+            <i onclick="location.href='https://www.facebook.com/muscleandstrength';"  class="fa fa-facebook fa-2x " aria-hidden="true" style ="color:#3b5999;"></i>
+            <i onclick="location.href='https://www.instagram.com/muscleandstrength/';" class="fa fa-instagram fa-2x"aria-hidden="true" style ="color:#cd486b"></i>
+            <i onclick="location.href='https://twitter.com/Muscle_Strength';" class="fa fa-twitter fa-2x"aria-hidden="true" style ="color:#55acee"></i>
+            <i onclick="location.href='https://www.youtube.com/user/muscleandstrength';" class="fa fa-youtube fa-2x"aria-hidden="true" style ="color:#cd201f;" ></i>
+        </ul>
+        </div>
+    </div>
+    <div class="footer-copyright py-3 text-center">
+        <small style="color: white">© 2018 Copyright:
+        <a href="https://bue.edu.eg"> The British University In Egypt </a></small>
+    </div>
+
+    <!--End of Footer-->
+<script>
+var slideIndex = 1;
+var video = document.getElementById("myVideo");
+
+
+showSlides(slideIndex);
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides"); // Get elements related to mySildes class
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+
+    slides[slideIndex-1].style.display = "block"; 
+    
+    function myFunction() {
+    if (video.paused) {   
+    video.play();
+    btn.innerHTML = "Pause";  //Show pause button on for video
+    } else {
+    video.pause();
+    btn.innerHTML = "Play"; //Show play button on for video
+    }
+}
+}
+</script>
+</script>
+</body>
+</html> 
