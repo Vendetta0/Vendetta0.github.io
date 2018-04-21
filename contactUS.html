@@ -2,65 +2,58 @@
 <html>
     
     <head>
+        <title>Contact</title>
         <meta charset="utf-8">
-        
-        <!--css files -->
-        <link rel="stylesheet" href="contactStyle.css">
-        <link rel="stylesheet" href="footer.css">
-        <link rel="stylesheet" href="header.css">
-        <!-- ------------------------------------------------------------ -->
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/contactStyle.css">
+    
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
-        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
         
         <title>Contact us</title>
         
         
                       </head>
     <body>
-   <!--Header start-->
+  
 
+        <nav>
+            <img src="img/maxmusclewhight.png" style="float: left;" width="240" height="170">
 
-   <nav>
-        <img src="img/maxmusclewhight.png" width="240" height="170"  >
-
-        <ul>
+            <ul>
 
                 <li>
-                        <a id="active" href ="index.html">Home</a> 
+                    <a id="active" href ="index.html">Home</a> 
                 </li>
-               
                 <li>
-                         <a style="color: #efefef" href = "aboutUS.html">About Us</a>
+                        <a style="color: #efefef" href = "aboutUS.html">About Us</a>
+
                 </li>
-                
                 <li> 
-                         <a style="color: #efefef" href = "contactUS.html">Contact Us</a>
+                    <a style="color: #efefef" href = "contactUS.html">Contact Us</a>
                 </li>
-              
                 <li> 
-                        <a style="color: #efefef" href = "Location.html">Stores</a>
+                    <a style="color: #efefef" href = "Location.html">Stores</a>
                 </li>
-              
                 <li>
+                        <!--DropDown list for supplements-->
                         <div class="dropdown">
                                 <a style="color: #efefef" href = "Supp.html">Supplements</a>
                                 <div class="dropdown-content">
-                                        <a href="Supp.html">Gainer</a>
-                                        <a href="#">Burners</a>
-                                        <a href="#">Protein</a>
-                                        <a href="#">Multivitamins</a>
-                                        <a href="#">Pre-Workout</a>                                           
+                                    <a href="Supp/Gainer.html">Gainer</a>
+                                    <a href="Supp/Burner.html">Burners</a>
+                                    <a href="Supp/Protein.html">Protein</a>
+                                    <a href="Supp/Multiviramins.html">Multivitamins</a>
+                                    <a href="Supp/Pre_Workout.html">Pre-Workout</a>   
                                 </div>
-                        </div> 
+                            </div> 
                 </li>
-                
 
-        </ul>
-   </nav>
- <!--Header end-->
-        
+
+            </ul>
+        </nav>
+
 
         <br>
         <!-- start of the filling table  -->
@@ -71,16 +64,16 @@
             <input type="text" name="" id=""  placeholder="Enter your Email">
             <input type="text" name="" id=""  placeholder="Enter your Phone Number">
             <textarea name="" id="" cols="30" rows="10" placeholder="Type your message here"></textarea>
-            <a href="#" style="margin-top:10px;padding-top:5px;" onclick="alertFunction()" >Submit</a>
+            <a href="#" style="margin-top:30px;padding-top:5px;" onclick="alertFunction()" >Submit</a>
             
             
         </div>
-         <!-- end of filling table -->
         
-        
-         <!--footer start-->
-        
-        <div id="footer" style="position: relative">
+   <div id="footer-main">
+
+        </div>                                                                                  
+
+        <div id="footer">
 
 
             <div class="text-center" style="padding-top: 20px">
@@ -98,15 +91,12 @@
                     <a href="https://bue.edu.eg"> The British University In Egypt </a></small>
             </div>
         </div>
-         <!-- footer end-->
-        
- <!--submit form confirmation-->
+
   <script>
   function alertFunction() {
     alert("Form has been Submitted!");
  }
-  </script>
-         <!--submit form end-->
+  </script>      
 </body>
 
         </html>
