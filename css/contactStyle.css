@@ -83,15 +83,15 @@ h1{
 
             }
             nav ul li a:hover{
-                background-color: #d33c13;
-                color: white;
+                background-color: white;
+                color: black;
                 text-decoration: none;
                 background-size: 100px;
 
             }
 
             #active{
-                color: lightcoral;
+                color: red;
             }
 
             /***************************/
