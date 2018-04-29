@@ -37,7 +37,7 @@ div.Product a.name:hover{
 div.Product div{
     font-size: 18px;
     font-weight: bold;
-    color: black;
+    color: crimson;
     text-indent:10px;
     margin: 10px 0 10px 0;
     float: left;
